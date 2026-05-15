@@ -3,318 +3,506 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dori 朵荔｜女 Solo 数字音乐人</title>
     <meta
       name="description"
-      content="Dori / Omera — AI Virtual Singer × Music Visual × Emotional Fantasy IP portfolio project."
-    />
-    <title>Dori / Omera | AIGC Music Visual Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
+      content="Dori 朵荔是一个原创女 Solo 数字音乐人企划，以音乐为核心，结合 AIGC 影像、角色 IP 与剧情音乐短片。"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <canvas id="particle-canvas" aria-hidden="true"></canvas>
-    <div class="ambient ambient-rose"></div>
-    <div class="ambient ambient-blue"></div>
-    <div class="ambient ambient-gold"></div>
+    <div class="aura aura-pink" aria-hidden="true"></div>
+    <div class="aura aura-blue" aria-hidden="true"></div>
+    <div class="aura aura-sage" aria-hidden="true"></div>
 
     <header class="site-header" id="top">
-      <nav class="nav-shell" aria-label="Primary navigation">
-        <a class="brand" href="#hero" data-scroll>
-          <span class="brand-mark">D/O</span>
-          <span>Dori / Omera</span>
-        </a>
-        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
-          <span></span>
-          <span></span>
-        </button>
-        <div class="nav-links">
-          <a href="#overview" data-scroll>Overview</a>
-          <a href="#dori" data-scroll>Dori</a>
-          <a href="#omera" data-scroll>Omera</a>
-          <a href="#story" data-scroll>Story</a>
-          <a href="#visual" data-scroll>Visual</a>
-          <a href="#music" data-scroll>Music</a>
-          <a href="#workflow" data-scroll>Workflow</a>
-        </div>
+      <a class="brand" href="#hero" aria-label="回到首页">
+        <span class="brand-orb"></span>
+        <span>Dori 朵荔</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#hero">首页</a>
+        <a href="#overview">项目概览</a>
+        <a href="#character">角色设定</a>
+        <a href="#story">剧情入口</a>
+        <a href="#omera">Omera</a>
+        <a href="#music">音乐方向</a>
+        <a href="#visual">视觉体系</a>
+        <a href="#workflow">流程</a>
+        <a href="#trailer">预告</a>
+        <a href="#roadmap">计划</a>
+        <a href="#collaboration">合作</a>
+        <a href="#value">项目价值</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero section" id="hero">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">AIGC Music Visual Portfolio Project</p>
-          <h1>Dori / Omera</h1>
-          <p class="hero-subtitle">AI Virtual Singer × Music Visual × Emotional Fantasy IP</p>
-          <p class="hero-line">
-            一个关于被遗忘的情绪，如何在声音与影像中重新被看见的 AIGC 音乐影像企划。
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#overview" data-scroll>View Concept</a>
-            <a class="btn ghost" href="#workflow" data-scroll>AIGC Workflow</a>
-            <a class="btn ghost" href="#trailer" data-scroll>Watch Trailer</a>
-            <!-- Replace this PDF with your exported portfolio deck. Missing file will not break the page. -->
-            <a class="btn soft" href="assets/dori-omera-portfolio.pdf" download>Download PDF</a>
-          </div>
-        </div>
-        <div class="hero-visual reveal delay-1">
-          <div class="media-frame hero-frame" data-asset-card>
-            <!-- Replace with main key visual: assets/dori-hero.png -->
-            <img src="assets/dori-hero.png" alt="Dori / Omera main visual" data-fallback-image />
-            <div class="placeholder">
-              <span>Visual Placeholder</span>
-              <small>assets/dori-hero.png</small>
+      <section class="section hero" id="hero">
+        <div class="section-inner hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Original Digital Solo Artist Project</p>
+            <h1>Dori 朵荔</h1>
+            <p class="hero-subtitle">女 Solo 数字音乐人</p>
+            <p class="hero-text">
+              以音乐为核心，结合 AIGC 影像、角色 IP 与剧情音乐短片，呈现一个关于成长、告别与情绪共鸣的原创数字音乐人企划。
+            </p>
+            <div class="hero-directory" aria-label="首页目录">
+              <a href="#overview">项目概览</a>
+              <a href="#character">角色设定</a>
+              <a href="#story">剧情入口</a>
+              <a href="#omera">Omera 世界观</a>
+              <a href="#settings">原创设定</a>
+              <a href="#music">音乐方向</a>
+              <a href="#visual">视觉体系</a>
+              <a href="#workflow">AIGC 制作流程</a>
+              <a href="#roadmap">项目推进计划</a>
+              <a href="#collaboration">合作方向</a>
+              <a href="#value">项目价值</a>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="section compact" id="overview">
-        <div class="section-heading reveal">
-          <p class="eyebrow">01 / Concept</p>
-          <h2>Project Overview <span>/ 项目定位</span></h2>
-        </div>
-        <div class="glass-panel overview-panel reveal delay-1">
-          <p class="lead">
-            《Dori / Omera》是一个以 AI 虚拟歌手 Dori 为核心的音乐影像企划，融合 AI 音乐、虚拟人 IP、AIGC 视觉、AI 漫剧与情绪奇幻叙事。
-          </p>
-          <div class="tag-grid">
-            <span>AI Virtual Singer</span>
-            <span>AIGC Music Visual</span>
-            <span>Emotional Fantasy</span>
-            <span>AI Drama Concept</span>
-            <span>Virtual Idol IP</span>
-            <span>Producer Portfolio</span>
+          <div class="hero-visual reveal" data-delay="120">
+            <!-- 素材：assets/dori-hero.png。不存在时显示 Dori Main Visual 占位。 -->
+            <figure class="media-frame hero-frame" data-media="image" data-src="assets/dori-hero.png">
+              <img src="assets/dori-hero.png" alt="Dori 朵荔主视觉" />
+              <figcaption class="media-placeholder">Dori Main Visual</figcaption>
+            </figure>
           </div>
         </div>
       </section>
 
-      <section class="section two-column" id="dori">
-        <div class="media-frame portrait-frame reveal">
-          <!-- Replace with Dori character design: assets/dori-character.png -->
-          <img src="assets/dori-character.png" alt="Dori character design" data-fallback-image />
-          <div class="placeholder">
-            <span>Dori Character</span>
-            <small>assets/dori-character.png</small>
+      <section class="section overview-section" id="overview">
+        <div class="section-inner overview-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Project Overview</p>
+            <h2>项目概览</h2>
+            <p>
+              Dori 朵荔是一个原创女 Solo 数字音乐人企划。项目以音乐作品为核心，结合 AIGC 影像、角色 IP、剧情音乐短片与虚拟内容运营，尝试探索数字音乐人从角色设定、原创歌曲、视觉影像到平台传播的完整路径。
+            </p>
           </div>
-        </div>
-        <div class="content-block reveal delay-1">
-          <p class="eyebrow">02 / Character</p>
-          <h2>Dori <span>/ 主角设定</span></h2>
-          <p>
-            Dori 是现实中的女大学生，也是虚拟舞台上的 AI 歌手。她明亮、乐观、佛系，像一个总能快速恢复的小太阳。
-          </p>
-          <p>
-            但她并不是没有悲伤，而是习惯把难过忘进潜意识深处。在 Omera 中，她逐渐学会看见那些被遗忘的情绪。
-          </p>
-          <div class="pill-list">
-            <span>乐观</span><span>细腻</span><span>少女暴君</span><span>甜酷</span><span>脆弱感</span><span>自我救赎</span>
+          <figure class="media-frame overview-visual reveal" data-delay="120" data-media="image" data-src="assets/overview-visual.png">
+            <!-- 素材：assets/overview-visual.png -->
+            <img src="assets/overview-visual.png" alt="Dori 项目概览视觉" />
+            <figcaption class="media-placeholder">Project Visual</figcaption>
+          </figure>
+          <div class="card-grid four">
+            <article class="info-card reveal">
+              <h3>项目类型</h3>
+              <p>原创数字音乐人 / AI 音乐影像 / 剧情音乐短片 / 虚拟歌手 IP</p>
+            </article>
+            <article class="info-card reveal" data-delay="60">
+              <h3>我的角色</h3>
+              <p>原创企划人 / 音乐制作人 / 角色设定 / 世界观构建 / AIGC 影像统筹</p>
+            </article>
+            <article class="info-card reveal" data-delay="120">
+              <h3>内容形态</h3>
+              <p>原创歌曲 / AI MV / 剧情音乐短片 / 角色短视频 / 世界观视觉内容</p>
+            </article>
+            <article class="info-card reveal" data-delay="180">
+              <h3>已有基础</h3>
+              <p>角色设定 / 第一支剧情音乐短片构想 / Omera 世界观 / Echora 设定 / 音乐风格定位 / AIGC 制作流程规划 / 展示网站</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section two-column reverse" id="omera">
-        <div class="content-block reveal">
-          <p class="eyebrow">03 / Worldbuilding</p>
-          <h2>Omera <span>/ 世界观</span></h2>
-          <p>
-            Omera 不是普通梦境，也不是异世界。它是由潜意识、未完成的告别、未说出口的话、被遗忘的情绪共同凝结成的情绪共鸣空间。
-          </p>
-          <p>
-            梦只是进入 Omera 的入口。在这里，冻结的情绪会以场景、声音、物品和人物残影的形式出现。
-          </p>
-          <div class="pill-list blue">
-            <span>潜意识</span><span>情绪残影</span><span>未完成告别</span><span>梦的背面</span><span>共鸣空间</span>
+      <section class="section highlights-section" id="highlights">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Highlights</p>
+            <h2>项目亮点</h2>
+          </div>
+          <div class="highlight-layout">
+            <div class="card-grid two">
+              <article class="info-card tall reveal">
+                <h3>音乐驱动的数字音乐人企划</h3>
+                <p>Dori 朵荔不是先有虚拟形象再补音乐，而是以声音、歌曲和情绪表达作为核心，围绕音乐内容建立角色、影像和世界观。</p>
+              </article>
+              <article class="info-card tall reveal" data-delay="80">
+                <h3>从剧情入口自然展开世界观</h3>
+                <p>第一支剧情音乐短片《小狐狸不回信》会先让观众理解 Dori 的情绪来源、Omera 的入口、Echora 的出现和回响坠的诞生。世界观不是硬讲出来的，而是从 Dori 的第一段故事里自然长出来。</p>
+              </article>
+              <article class="info-card tall reveal" data-delay="160">
+                <h3>适合 AIGC 影像表达</h3>
+                <p>Omera 作为潜意识平行时空，天然适合通过 AIGC 影像呈现梦核空间、记忆残影、时间循环、情绪回声等画面。这让项目具备 AI MV、剧情音乐短片和角色短视频的多种表达可能。</p>
+              </article>
+              <article class="info-card tall reveal" data-delay="240">
+                <h3>兼具情绪共鸣与周边延展</h3>
+                <p>成长、告别、遗憾、被遗忘的情绪，是年轻用户容易理解的主题。同时，回响坠作为 Dori 的核心信物，也具备发展成项链、挂件、钥匙扣、徽章等周边的可能。</p>
+              </article>
+            </div>
+            <figure class="media-frame pendant-frame reveal" data-delay="120" data-media="image" data-src="assets/echora-pendant.png">
+              <!-- 素材：assets/echora-pendant.png -->
+              <img src="assets/echora-pendant.png" alt="Echora Pendant 回响坠" />
+              <figcaption class="media-placeholder">Echora Pendant</figcaption>
+            </figure>
           </div>
         </div>
-        <div class="media-frame landscape-frame reveal delay-1">
-          <!-- Replace with Omera world concept art: assets/omera-world.png -->
-          <img src="assets/omera-world.png" alt="Omera moonlit emotional resonance world" data-fallback-image />
-          <div class="placeholder world-placeholder">
-            <span>Moonlit Garden · Star Sea · Glass Fog</span>
-            <small>assets/omera-world.png</small>
+      </section>
+
+      <section class="section character-section" id="character">
+        <div class="section-inner split-grid">
+          <figure class="media-frame character-frame reveal" data-media="image" data-src="assets/dori-character.png">
+            <!-- 素材：assets/dori-character.png -->
+            <img src="assets/dori-character.png" alt="Dori 朵荔角色视觉" />
+            <figcaption class="media-placeholder">Dori Character Visual</figcaption>
+          </figure>
+          <div class="reveal" data-delay="120">
+            <div class="section-heading compact">
+              <p class="eyebrow">Character</p>
+              <h2>Dori 朵荔：佛系而乐观的女 Solo 数字音乐人</h2>
+            </div>
+            <div class="card-grid one">
+              <article class="mini-card">
+                <h3>身份</h3>
+                <p>Dori 朵荔是一位原创女 Solo 数字音乐人。她既像现实中佛系而乐观的女大学生，也像虚拟舞台上拥有独特音乐世界与影像表达的歌者。</p>
+              </article>
+              <article class="mini-card">
+                <h3>性格</h3>
+                <p>她佛系、乐观、细腻，习惯用轻松的方式面对生活。她的乐观并不是伪装，而是她真实的一部分。只是有些来不及处理的难过，会被她不知不觉地遗忘进潜意识深处，最终在 Omera 中留下回声。</p>
+              </article>
+              <article class="mini-card">
+                <h3>视觉</h3>
+                <p>Dori 朵荔拥有白金长发，发丝中带有淡粉色挑染，瞳色为柔和的粉棕色。她的整体穿搭偏韩系简约风，以干净、轻盈、自然的女 Solo 气质为主。她不是过度复杂的赛博偶像，也不是单纯甜美的少女形象。她的外表给人的第一感觉是温柔、精致、清透，但细看又有一点若有若无的疏离感和隐藏的疲惫感。</p>
+              </article>
+              <article class="mini-card">
+                <h3>声音</h3>
+                <p>清透、甜美、带呼吸感的少女声线。情绪底色中有一点疲惫、破碎和自我保护。她的声音不是炫技型，而是更强调情绪氛围、旋律记忆点与角色表达。</p>
+              </article>
+              <article class="mini-card pendant-note">
+                <h3>核心信物</h3>
+                <p>Dori 佩戴着一枚透明、精致的 Echora Pendant / 回响坠。它是小狐狸留给她的信物，也是她听见他人情绪回声、再次进入 Omera 的媒介。</p>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section story-section" id="story">
-        <div class="section-heading reveal">
-          <p class="eyebrow">04 / Story Arc</p>
-          <h2>Little Fox, No Reply <span>/ 小狐狸不回信</span></h2>
-        </div>
-        <div class="story-grid">
-          <article class="glass-panel story-copy reveal">
-            <p>
-              小学毕业那天，Dori 和一个重要的朋友约定用纸杯电话说出最后一句悄悄话。但毕业日太混乱，她只听见断断续续的声音。
-            </p>
-            <p>
-              多年后，她反复梦见一只熟悉的小狐狸。小狐狸不是那位朋友本人，而是那句没有抵达的告别在 Omera 中留下的情绪残影。
-            </p>
-            <p>
-              它带 Dori 回到 Omera，不是为了找回过去，而是为了让那段被遗忘的情绪终于被看见、承认和安放。
-            </p>
-            <p class="quote-line">小狐狸不是回来陪她的人，而是那段没被看见的情绪终于被看见。</p>
-          </article>
-          <div class="story-media reveal delay-1">
-            <div class="media-frame square-frame">
-              <!-- Replace with fox emotional echo visual: assets/little-fox.png -->
-              <img src="assets/little-fox.png" alt="Little fox emotional echo" data-fallback-image />
-              <div class="placeholder"><span>Little Fox</span><small>assets/little-fox.png</small></div>
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Story Entrance</p>
+            <h2>剧情入口与后续发展</h2>
+            <p class="section-subtitle">从《小狐狸不回信》开始</p>
+          </div>
+          <div class="story-layout">
+            <div class="story-copy reveal">
+              <p>《小狐狸不回信》是 Dori 朵荔的第一支剧情音乐短片，也是观众第一次理解 Omera 的入口。</p>
+              <p>小学毕业日，Dori 和一个重要的朋友约定，用纸杯传声筒说出最后一句只有彼此知道的悄悄话。但毕业日太混乱，她只听见断断续续的声音。那句告别没有真正抵达，也成为她后来遗忘进潜意识深处的一段遗憾。</p>
+              <p>多年后，Dori 反复梦见一只熟悉的小狐狸。小狐狸带她进入 Omera，让她重新靠近那段被遗忘的情绪。她逐渐发现，小狐狸不是那位朋友本人，而是那句没有抵达的告别在潜意识中留下的情绪残影。</p>
+              <p>当 Dori 终于承认自己曾经真的难过、真的想念对方，并听见传声筒里那句未说完的话时，那段情绪被看见、被理解、被安放。小狐狸也完成了自己的使命。</p>
+              <p>消失前，小狐狸将纸杯传声筒中的线凝成一枚小小的透明吊坠——Echora Pendant / 回响坠。</p>
+              <p>从此，Dori 不再只能听见自己的遗憾。她也能通过回响坠，听见他人潜意识深处的 Echora 情绪回声，继续进入 Omera，走向新的音乐故事。</p>
             </div>
-            <div class="media-frame square-frame offset-card">
-              <!-- Replace with paper cup phone visual: assets/paper-cup-phone.png -->
-              <img src="assets/paper-cup-phone.png" alt="Paper cup phone memory object" data-fallback-image />
-              <div class="placeholder"><span>Paper Cup Phone</span><small>assets/paper-cup-phone.png</small></div>
+            <div class="story-side reveal" data-delay="120">
+              <h3>后续发展空间</h3>
+              <p>每一段 Echora 都可能来自一个没有说出口的告白、一次没来得及道别的离开、一句被压回心里的道歉，或一个反复出现在梦里的瞬间。</p>
+              <p>Dori 会顺着这些情绪回声进入 Omera，让不同人的情绪被看见、理解和重新流动。</p>
+              <div class="pill-list">
+                <span>原创歌曲</span>
+                <span>AI MV</span>
+                <span>剧情音乐短片</span>
+                <span>角色短视频</span>
+                <span>Omera 世界观切片</span>
+              </div>
+              <blockquote>
+                每一首歌，都可以对应一段被困住的情绪。每一次进入 Omera，都是一次新的倾听。
+              </blockquote>
             </div>
+          </div>
+          <div class="story-media-grid">
+            <figure class="media-frame story-card reveal" data-media="image" data-src="assets/paper-cup-phone.png">
+              <img src="assets/paper-cup-phone.png" alt="纸杯传声筒" />
+              <figcaption>童年约定</figcaption>
+              <span class="media-placeholder">童年约定</span>
+            </figure>
+            <figure class="media-frame story-card reveal" data-delay="80" data-media="image" data-src="assets/little-fox.png">
+              <img src="assets/little-fox.png" alt="小狐狸情绪残响" />
+              <figcaption>小狐狸</figcaption>
+              <span class="media-placeholder">小狐狸</span>
+            </figure>
+            <figure class="media-frame story-card reveal" data-delay="160" data-media="image" data-src="assets/echora-pendant.png">
+              <img src="assets/echora-pendant.png" alt="回响坠" />
+              <figcaption>回响坠</figcaption>
+              <span class="media-placeholder">回响坠</span>
+            </figure>
           </div>
         </div>
       </section>
 
-      <section class="section" id="visual">
-        <div class="section-heading reveal">
-          <p class="eyebrow">05 / Art Direction</p>
-          <h2>Visual Moodboard <span>/ 视觉风格</span></h2>
-        </div>
-        <div class="moodboard-grid">
-          <article class="mood-card reveal">
-            <div class="mood-image">
-              <!-- Replace moodboard image: assets/mood-character.png -->
-              <img src="assets/mood-character.png" alt="Character moodboard" data-fallback-image />
-              <div class="placeholder"><span>Character</span></div>
-            </div>
-            <h3>Character</h3>
-            <p>白金长发、淡粉能量高光、灰蓝眼睛、甜酷科技服装</p>
-          </article>
-          <article class="mood-card reveal delay-1">
-            <div class="mood-image">
-              <!-- Replace moodboard image: assets/mood-space.png -->
-              <img src="assets/mood-space.png" alt="Space moodboard" data-fallback-image />
-              <div class="placeholder"><span>Space</span></div>
-            </div>
-            <h3>Space</h3>
-            <p>月光花园、梦的背面、情绪海岸、星光通道</p>
-          </article>
-          <article class="mood-card reveal delay-2">
-            <div class="mood-image">
-              <!-- Replace moodboard image: assets/mood-texture.png -->
-              <img src="assets/mood-texture.png" alt="Texture moodboard" data-fallback-image />
-              <div class="placeholder"><span>Texture</span></div>
-            </div>
-            <h3>Texture</h3>
-            <p>玻璃、雾气、粒子、柔光、轻微故障感</p>
-          </article>
-          <article class="mood-card reveal delay-3">
-            <div class="mood-image">
-              <!-- Replace moodboard image: assets/mood-color.png -->
-              <img src="assets/mood-color.png" alt="Color moodboard" data-fallback-image />
-              <div class="placeholder"><span>Color</span></div>
-            </div>
-            <h3>Color</h3>
-            <p>粉白、银蓝、灰紫、浅金、透明感</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section two-column" id="music">
-        <div class="content-block reveal">
-          <p class="eyebrow">06 / Sound</p>
-          <h2>Music Identity <span>/ 声音与音乐</span></h2>
-          <p>
-            Dori 的声音是清透、甜美、带呼吸感的少女声线，但情绪底色中有一点疲惫、破碎和自我保护。
-          </p>
-          <p>
-            音乐方向以 Magical Synth-Pop、Dream Pop、Teen Pop-Punk、lo-fi R&amp;B 为主。作品不只追求好听，也要服务于角色、剧情和影像表达。
-          </p>
-          <div class="pill-list gold">
-            <span>crystalline vocal</span><span>dreamy synth</span><span>magical pop</span><span>soft glitch</span><span>emotional hook</span><span>K-pop energy</span>
+      <section class="section omera-section" id="omera">
+        <div class="section-inner split-grid reverse">
+          <div class="omera-copy reveal">
+            <p class="eyebrow">Omera</p>
+            <h2>Omera 世界观</h2>
+            <p class="section-subtitle">Omera：潜意识构成的平行时空</p>
+            <p>Omera 不是梦境，也不是一种感觉。</p>
+            <p>它是一个真实存在于故事中的平行时空，由潜意识、未完成的告别、未说出口的话和被遗忘的情绪共同构成。梦只是进入 Omera 的入口，而不是 Omera 本身。</p>
+            <p>在 Omera 中，情绪不会凭空消失。那些没有被说出口、没有被理解、没有被好好告别的情绪，会以空间、声音、物品、人物残影和时间循环的形式留下来。</p>
+            <p>对于 Dori 来说，Omera 不是逃避现实的地方，而是她重新看见情绪、理解记忆、安放遗憾的地方。</p>
+            <p>这一页只解释 Omera 的基本性质。具体的 Echora、回响坠和循环机制，会在后面的原创设定中展开。</p>
           </div>
-        </div>
-        <div class="player-card reveal delay-1" data-audio-player>
-          <div class="disc-orbit"></div>
-          <p class="eyebrow">Demo Player</p>
-          <h3>Dori — Omera Demo</h3>
-          <!-- Replace with audio demo: assets/dori-demo.mp3 -->
-          <audio controls preload="metadata" src="assets/dori-demo.mp3"></audio>
-          <div class="media-placeholder">Demo Coming Soon</div>
+          <figure class="media-frame world-frame reveal" data-delay="120" data-media="image" data-src="assets/omera-world.png">
+            <!-- 素材：assets/omera-world.png -->
+            <img src="assets/omera-world.png" alt="Omera 潜意识平行时空" />
+            <figcaption class="media-placeholder">Omera World Visual</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="section" id="trailer">
-        <div class="section-heading reveal">
-          <p class="eyebrow">07 / Video</p>
-          <h2>Concept Trailer <span>/ 概念预告</span></h2>
-        </div>
-        <div class="trailer-grid">
-          <div class="video-card reveal" data-video-player>
-            <!-- Replace with 30s concept trailer: assets/trailer.mp4 -->
-            <video controls playsinline preload="metadata" src="assets/trailer.mp4"></video>
-            <div class="video-placeholder">
-              <span>30s Concept Trailer Placeholder</span>
-              <small>assets/trailer.mp4</small>
-            </div>
+      <section class="section settings-section" id="settings">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Original Settings</p>
+            <h2>原创设定</h2>
           </div>
-          <ol class="timeline reveal delay-1">
-            <li><span>0—5s</span>现实宿舍，Dori 醒来</li>
-            <li><span>5—10s</span>纸杯电话出现杂音</li>
-            <li><span>10—18s</span>小狐狸带她进入 Omera</li>
-            <li><span>18—25s</span>毕业日碎片闪回</li>
-            <li><span>25—30s</span>Dori 听见迟到的告别，小狐狸消散</li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="section" id="workflow">
-        <div class="section-heading reveal">
-          <p class="eyebrow">08 / Production Pipeline</p>
-          <h2>AIGC Workflow <span>/ 从概念到成片</span></h2>
-          <p>
-            本项目重点展示创作者如何以“制作人”身份统筹音乐、角色、视觉、叙事和 AI 工具，而不是单纯完成某一个执行环节。
-          </p>
-        </div>
-        <div class="workflow-wrap reveal delay-1">
-          <div class="workflow-track">
-            <div class="workflow-step">世界观设定</div>
-            <div class="workflow-step">歌词 / 音乐 Demo</div>
-            <div class="workflow-step">角色视觉</div>
-            <div class="workflow-step">场景视觉</div>
-            <div class="workflow-step">分镜脚本</div>
-            <div class="workflow-step">首尾帧生成</div>
-            <div class="workflow-step">AI 视频生成</div>
-            <div class="workflow-step">剪辑包装</div>
-            <div class="workflow-step">平台发布</div>
-            <div class="workflow-step">数据反馈</div>
+          <div class="settings-grid">
+            <article class="setting-card reveal">
+              <h3>Omera</h3>
+              <p>Omera 是由潜意识构成的平行时空。它承载着人们没有说出口的话、没有完成的告别和被遗忘的情绪。Dori 通过梦进入 Omera，但 Omera 本身不是梦。</p>
+            </article>
+            <article class="setting-card reveal" data-delay="80">
+              <h3>Echora</h3>
+              <p>Echora 是 Omera 中残留的“情绪回声”。它不是普通声音，而是一段未完成情绪留下的残响。有时它像断续的话语，有时像旋律、杂音、童年的声音，或某个反复出现的梦境片段。它代表那些没有被听见、没有被说完、没有被好好安放的情绪。</p>
+            </article>
+            <article class="setting-card feature reveal" data-delay="160">
+              <h3>Echora Pendant / 回响坠</h3>
+              <p>回响坠是小狐狸留给 Dori 的核心信物。它由童年纸杯传声筒中那条“没有抵达的线”在 Omera 中凝缩而成，外形是一枚小小的透明吊坠。吊坠内部有一圈极细的银色声波线，像纸杯电话的线被封存在玻璃里，也像一段还没有结束的回声。它不是普通饰品，而是连接 Dori 与 Omera 的媒介。通过回响坠，Dori 能听见他人潜意识深处的 Echora，也因此被引向新的情绪故事。</p>
+            </article>
+            <article class="setting-card reveal" data-delay="240">
+              <h3>循环机制</h3>
+              <p>在 Omera 中，某些未被看见的情绪会形成循环。一个场景、一句话、一次错过、一次告别，可能反复发生。循环不会因为时间流逝自动结束。只有当那段情绪被看见、理解和安放，它才会停止。这一机制可以用于 Dori 的剧情音乐短片，让每一支歌曲都对应一段被困住的情绪。</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section final-section" id="value">
-        <div class="glass-panel value-panel reveal">
-          <p class="eyebrow">09 / Portfolio Value</p>
-          <h2>Portfolio Value <span>/ 作品集价值</span></h2>
-          <p>
-            《Dori / Omera》不仅是一个虚拟歌手设定，也是一套 AIGC 音乐影像内容生产实验。它展示了创作者在音乐审美、角色 IP、情绪叙事、AI 视觉、短视频内容和项目统筹上的综合能力。
-          </p>
-          <div class="role-grid">
-            <span>AI音乐影像制作人</span>
-            <span>虚拟歌手IP策划</span>
-            <span>AIGC内容创意制作</span>
-            <span>音乐向AI视频Producer</span>
+      <section class="section music-section" id="music">
+        <div class="section-inner split-grid">
+          <div class="music-copy reveal">
+            <p class="eyebrow">Music Identity</p>
+            <h2>音乐方向</h2>
+            <p class="section-subtitle">Dori 的声音与音乐方向</p>
+            <p>Dori 的音乐不是单纯配乐，而是角色表达的一部分。她的歌曲承担着“让情绪被听见”的功能，连接角色故事、影像叙事与用户共鸣。</p>
+            <h3>主要风格方向</h3>
+            <div class="pill-list">
+              <span>Magical Synth-Pop</span>
+              <span>Dream Pop</span>
+              <span>Teen Pop-Punk</span>
+              <span>lo-fi R&amp;B</span>
+            </div>
+            <h3>声音关键词</h3>
+            <div class="pill-list">
+              <span>清透少女声</span>
+              <span>呼吸感</span>
+              <span>梦幻合成器</span>
+              <span>情绪副歌</span>
+              <span>轻微故障感</span>
+              <span>K-pop 能量</span>
+              <span>叙事型 MV 表达</span>
+            </div>
+            <p>Dori 的歌曲希望兼具流行性与角色感。既要有容易记住的旋律与 hook，也要能让听众感受到她背后的故事、情绪和世界观。</p>
           </div>
-          <p class="closing-line">
-            Let forgotten emotions be seen again through sound and vision.<br />让被遗忘的情绪，在声音与影像中重新被看见。
-          </p>
+          <div class="player-card reveal" data-delay="120">
+            <!-- Demo 封面：assets/dori-hero.png。可替换为单曲封面图。 -->
+            <figure class="demo-cover" data-media="image" data-src="assets/dori-hero.png">
+              <img src="assets/dori-hero.png" alt="Dori 音乐 Demo 封面" />
+              <figcaption class="media-placeholder">Dori Demo Cover</figcaption>
+            </figure>
+            <p class="player-label">Dori Demo</p>
+            <h3>Don’t Wake（demo）</h3>
+            <!-- 素材：assets/dori-demo.mp3。不存在时显示 Demo Coming Soon。 -->
+            <audio controls preload="metadata" data-audio-candidates="assets/dori-demo.mp3"></audio>
+            <div class="demo-placeholder">Demo Coming Soon</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section visual-section" id="visual">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Art Direction</p>
+            <h2>视觉体系</h2>
+            <p>真实世界被梦境轻轻覆盖一层滤镜。少女日常、旧 DV 记忆、发光小狐狸、手写涂鸦、玻璃吊坠和情绪回声共同构成 Dori 的视觉语言。</p>
+          </div>
+          <div class="visual-grid">
+            <article class="mood-card reveal">
+              <figure data-media="image" data-src="assets/mood-dori.png">
+                <img src="assets/mood-dori.png" alt="Dori 角色视觉" />
+                <span class="media-placeholder">角色视觉</span>
+              </figure>
+              <h3>角色视觉</h3>
+              <p>Dori 的角色视觉以白金长发、淡粉色挑染、粉棕瞳色和韩系简约穿搭为核心。整体气质干净、轻盈、清透，有女 Solo 数字音乐人的自然感，也保留一点梦境般的疏离感。</p>
+            </article>
+            <article class="mood-card reveal" data-delay="60">
+              <figure data-media="image" data-src="assets/mood-dreamcore.png">
+                <img src="assets/mood-dreamcore.png" alt="真实梦核青春 MV 截图感" />
+                <span class="media-placeholder">真实梦核</span>
+              </figure>
+              <h3>真实梦核 / 青春 MV 截图感</h3>
+              <p>Dori 的主视觉不应是普通写真，而应像青春电影或 MV 中被截取下来的一帧。黄昏街道、窗边逆光、学校走廊、旧 DV 颗粒、低饱和晚霞、虹彩光斑和轻微失焦，共同构成她的现实底色。</p>
+            </article>
+            <article class="mood-card reveal" data-delay="120">
+              <figure data-media="image" data-src="assets/little-fox.png">
+                <img src="assets/little-fox.png" alt="记忆残响小狐狸" />
+                <span class="media-placeholder">记忆残响</span>
+              </figure>
+              <h3>记忆残响 / 小狐狸</h3>
+              <p>小狐狸不是实体宠物，而是情绪残响。它可以表现为远处发光的白影、墙面上淡淡的狐狸线条、记忆碎片中的轮廓，或现实与 Omera 交界处一闪而过的光。</p>
+            </article>
+            <article class="mood-card reveal" data-delay="180">
+              <figure data-media="image" data-src="assets/mood-omera.png">
+                <img src="assets/mood-omera.png" alt="Omera 空间视觉" />
+                <span class="media-placeholder">Omera 空间</span>
+              </figure>
+              <h3>Omera 空间视觉</h3>
+              <p>Omera 是潜意识平行时空，因此画面不应像普通奇幻世界。它更接近梦核空间、记忆废墟、月光花园、潜意识海岸、循环走廊和星光通道。</p>
+            </article>
+            <article class="mood-card reveal" data-delay="240">
+              <figure data-media="image" data-src="assets/echora-pendant.png">
+                <img src="assets/echora-pendant.png" alt="回响坠视觉" />
+                <span class="media-placeholder">回响坠视觉</span>
+              </figure>
+              <h3>回响坠视觉</h3>
+              <p>回响坠是一枚小巧、透明、精致的吊坠。它的内部封存着一圈极细的银色声波线，像纸杯电话的线，也像一段凝固的回声。</p>
+            </article>
+            <article class="mood-card reveal" data-delay="300">
+              <figure data-media="image" data-src="assets/mood-color.png">
+                <img src="assets/mood-color.png" alt="材质与色彩" />
+                <span class="media-placeholder">材质与色彩</span>
+              </figure>
+              <h3>材质与色彩</h3>
+              <p>玻璃、雾气、粒子、柔光、轻微故障感、低饱和梦境滤镜。色彩以粉白、银蓝、灰紫、浅金、透明感为主。整体视觉保持梦幻、轻盈、少女感和音乐影像感。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section workflow-section" id="workflow">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">AIGC Workflow</p>
+            <h2>AIGC 制作流程</h2>
+            <p>本项目希望以“音乐创作 + AIGC 影像 + 虚拟 IP 运营”的方式推进，不只是完成单一视频，而是建立一个可持续生产的数字音乐人内容流程。</p>
+          </div>
+          <div class="workflow reveal">
+            <span>角色设定</span>
+            <span>世界观与原创设定</span>
+            <span>歌词 / 音乐 Demo</span>
+            <span>剧情脚本</span>
+            <span>角色视觉</span>
+            <span>场景视觉</span>
+            <span>道具视觉设计</span>
+            <span>分镜脚本</span>
+            <span>AI 视频生成</span>
+            <span>剪辑包装</span>
+            <span>平台发布</span>
+            <span>数据反馈</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section trailer-section" id="trailer">
+        <div class="section-inner trailer-grid">
+          <div class="reveal">
+            <p class="eyebrow">Concept Trailer</p>
+            <h2>概念预告 / AI MV</h2>
+            <p>这一部分用于展示 Dori 朵荔的剧情音乐短片概念预告、AI MV 片段或未来发布的视频内容。</p>
+            <p>计划中的第一支概念预告将围绕《小狐狸不回信》展开，呈现纸杯传声筒、小狐狸、Omera 入口、Echora 情绪回声与回响坠诞生的关键画面。</p>
+            <ol class="timeline-list">
+              <li><span>0—5s</span>现实中的 Dori 醒来</li>
+              <li><span>5—10s</span>纸杯传声筒传来断续声音</li>
+              <li><span>10—18s</span>小狐狸带她进入 Omera</li>
+              <li><span>18—25s</span>毕业日记忆碎片闪回</li>
+              <li><span>25—30s</span>回响坠诞生，Dori 听见新的 Echora</li>
+            </ol>
+          </div>
+          <div class="video-card reveal" data-delay="120">
+            <!-- 素材：assets/dori-trailer.mp4；封面：assets/trailer-cover.png。不存在时显示占位。 -->
+            <video controls playsinline preload="metadata" data-video-src="assets/dori-trailer.mp4" data-poster-src="assets/trailer-cover.png"></video>
+            <div class="video-placeholder">30s Concept Trailer Coming Soon</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section roadmap-section" id="roadmap">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Roadmap</p>
+            <h2>项目推进计划</h2>
+          </div>
+          <div class="roadmap">
+            <article class="roadmap-card reveal">
+              <span>第一阶段</span>
+              <h3>概念验证</h3>
+              <p>完成 Dori 角色视觉、回响坠道具设计、60 秒音乐 Demo、30 秒剧情音乐短片概念预告，初步验证角色、音乐、Omera 视觉和 Echora 设定是否成立。</p>
+            </article>
+            <article class="roadmap-card reveal" data-delay="120">
+              <span>第二阶段</span>
+              <h3>内容测试</h3>
+              <p>发布 AI MV 片段、角色短视频、世界观切片和回响坠视觉内容，观察用户对 Dori 视觉、声音、故事设定和情绪主题的反馈。</p>
+            </article>
+            <article class="roadmap-card reveal" data-delay="240">
+              <span>第三阶段</span>
+              <h3>发行与运营探索</h3>
+              <p>尝试原创歌曲发行、虚拟 IP 账号运营、平台内容增长、周边概念测试与商业合作可能性，让 Dori 从单个项目逐渐发展为持续更新的数字音乐人企划。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section collaboration-section" id="collaboration">
+        <div class="section-inner">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Collaboration</p>
+            <h2>合作方向</h2>
+          </div>
+          <div class="card-grid four">
+            <article class="info-card reveal">
+              <h3>AIGC 影像制作支持</h3>
+              <p>希望进一步完善角色一致性、Omera 空间视觉、Echora 视觉化、回响坠道具设计、AI MV 片段和剧情音乐短片制作流程。</p>
+            </article>
+            <article class="info-card reveal" data-delay="80">
+              <h3>音乐发行与版权支持</h3>
+              <p>希望获得原创歌曲发行、版权管理、平台分发与合规方面的支持。</p>
+            </article>
+            <article class="info-card reveal" data-delay="160">
+              <h3>虚拟 IP 运营支持</h3>
+              <p>希望进一步明确账号定位、内容节奏、粉丝互动方式和平台增长策略。</p>
+            </article>
+            <article class="info-card reveal" data-delay="240">
+              <h3>商业化路径支持</h3>
+              <p>希望探索数字音乐人项目在音乐发行、短视频内容、角色周边、品牌合作、虚拟演出或跨媒介内容中的发展可能。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section value-section" id="value">
+        <div class="section-inner value-card reveal">
+          <p class="eyebrow">Value</p>
+          <h2>项目价值 / IP 发展潜力</h2>
+          <p>Dori 朵荔不只是一个虚拟歌手形象，而是一个以音乐为核心、以 AIGC 影像为表达方式、以成长、告别与情绪共鸣为内容驱动的原创数字音乐人企划。</p>
+          <p>她具备持续推出原创歌曲、剧情音乐短片、角色短视频和世界观视觉内容的延展潜力。</p>
+          <p>Omera 作为潜意识平行时空，Echora 作为情绪回声设定，回响坠作为连接现实与 Omera 的核心信物，为 Dori 后续的音乐影像内容和周边开发提供了持续扩展的叙事基础。</p>
+          <div class="pill-list">
+            <span>音乐制作人</span>
+            <span>原创数字音乐人企划人</span>
+            <span>AIGC 音乐影像内容制作人</span>
+          </div>
+          <p class="closing">让被遗忘的情绪，在声音与影像中重新被看见。</p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Lucy Lu</p>
-      <p>AIGC Music Visual Portfolio Project</p>
-      <p>Dori / Omera</p>
+      <p>Dori 朵荔｜女 Solo 数字音乐人</p>
+      <p>让被遗忘的情绪，在声音与影像中重新被看见。</p>
+      <p>© 2026 Lucy Lu</p>
     </footer>
 
     <script src="script.js"></script>
